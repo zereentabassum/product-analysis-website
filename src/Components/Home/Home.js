@@ -1,17 +1,31 @@
 
 import React from 'react';
+import reviewDetails from '../Hook/reviewDetails';
 import './Home.css';
 
 const Home = () => {
+    const customerReviews = reviewDetails();
+    console.log();
     return (
-        <div className='flex container'>
-            <div className='mt-8 pt-6'> 
+        <div>
+        <div  className='flex container'>
+            <div className='mt-8 pt-6 ml-5'> 
                 <h1 className='text-8xl text-emerald-500 pb-8'>Clear Pixel Camera</h1>
-                <p text-2xl>This is about the best digital cameras from top brands. We will allow you to analysis the top branded digital cameras.</p>
+                <p className='pl-2 font-semibold'>This is about the best digital cameras from top brands. We will allow you to analysis the top branded digital cameras.</p>
             </div>
             <div className=''>
                 <img src="https://www.pngmart.com/files/6/DSLR-Camera-Transparent-Background.png" alt="" />
             </div>
+        </div>
+
+        <div className='reviewSection pt-8 mt-6 '>
+            <h1 className='text-emerald-600 text-5xl pb-8'>Customer Reviews {customerReviews.length}</h1>
+            <div>
+                {/* {console.log(customerReviews) } */}
+             <p></p>
+             <p></p>
+            </div>
+        </div>
         </div>
     );
 };

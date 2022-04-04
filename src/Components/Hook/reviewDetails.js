@@ -1,5 +1,7 @@
 
-const reviews = [
+const reviewDetails = () => {
+    
+const reviewInfos = [
     {
         name: "Robert Cruse",
         review:"The camera that I bought from here is great. It is very easy to use. I can take very high quality pictures from it.",
@@ -37,9 +39,11 @@ const reviews = [
         id: 6
     }
 ]
+    
+    const reviewlist = reviewInfos.map(reviewInfo => reviewInfo={reviewInfo})
+  
 
+    return  reviewlist;
+    }
 
-
-
-
-
+    export default reviewDetails;
