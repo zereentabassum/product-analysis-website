@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Review from './Components/Review/Review';
+import reviewDetails from './Components/Hook/reviewDetails';
 
 function App() {
   return (

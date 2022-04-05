@@ -39,12 +39,13 @@ const reviewInfos = [
         id: 6
     }
 ]
-    console.log(reviewInfos.name);
+//   console.log();
     // console.log(reviewInfos);
-    const reviewList = reviewInfos.map(reviewInfo=> reviewInfo={reviewInfo})
-    console.log(reviewList);
+    // console.log(reviewInfos);
+    // const reviewList = reviewInfos.map(reviewInfo=> reviewInfo={reviewInfo})
+    // console.log(reviewList.reviewInfo);
     // console.log([a,b,c,d]);
-    return  reviewList;
+    return  reviewInfos;
     }
 
     export default reviewDetails;
