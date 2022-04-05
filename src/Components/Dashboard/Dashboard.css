@@ -1,0 +1,10 @@
+.chart-section{
+    display: flex;
+    margin-top: 40px;
+}
+.first-chart{
+    margin-left: 40px;
+}
+.second-chart{
+    margin-left: 200px;
+}

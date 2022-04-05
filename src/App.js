@@ -1,5 +1,7 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import './index';
 import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs';
 import Dashboard from './Components/Dashboard/Dashboard';
@@ -22,7 +24,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
-         </div>
+    </div>
   );
 }
 

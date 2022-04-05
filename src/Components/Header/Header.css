@@ -1,0 +1,12 @@
+.navbar{
+    font-size: 20px;
+    background-color: rgb(255, 189, 165);
+    padding: 16px;
+}
+.navBar{
+    text-decoration: none;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: black;
+}

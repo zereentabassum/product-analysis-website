@@ -1,0 +1,14 @@
+.heading{
+    color: rgb(26, 209, 139);
+}
+.first-section{
+    display: flex;
+    margin-bottom: 60px;
+}
+.first-section h1{
+    font-size: 70px;
+    padding-top: 50px;
+}
+.first-section img{
+    width: 98%;
+}
