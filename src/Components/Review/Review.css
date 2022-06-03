@@ -1,0 +1,11 @@
+.review-page{
+    margin: 50px;
+}
+
+@media only screen and (max-width:678px){
+
+    .review-page{
+        margin: 5px;
+    }
+
+}

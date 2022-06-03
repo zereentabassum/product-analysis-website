@@ -1,0 +1,21 @@
+.user-img{
+    display: flex;
+    justify-content:start;
+}
+
+.user-img img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+}
+.user-img h4{
+    padding-left: 15px;
+}
+.details{
+    text-align: start;
+    padding: 6px;
+}
+.all-reviews{
+    background-color: rgb(163, 255, 170);
+    padding: 15px;
+}

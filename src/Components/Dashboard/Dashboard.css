@@ -8,3 +8,15 @@
 .second-chart{
     margin-left: 200px;
 }
+
+@media only screen and (max-width:678px){
+    .chart-section{
+        display: block;
+    }
+    .first-chart{
+        margin-left: 0px;
+    }
+    .second-chart{
+        margin-left: 0px;
+    }
+}

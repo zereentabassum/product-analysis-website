@@ -1,17 +1,21 @@
 import React from 'react';
+import ReviewSec from '../Home/ReviewSec';
 import reviewDetails from '../Hook/reviewDetails';
+import useReviews from '../Hook/useReviews';
+import './Review.css';
 
 const Review = () => {
-    const allReviews = reviewDetails();
-    // console.log(allReviews);
-
+    const [reviews, setReviews] = useReviews();
   
-    // const b = allReviews.map(allReview => allReview);
-        // console.log(allReviews[1].map(allReview => allReview));
-        
     return (
-        <div className='grid grid-cols-4 gap-4'>
-            
+        <div className='review-page'>
+            <h1>All Reviews</h1>
+             <div className='reviews'>
+                    {
+                        reviews.map(review=> <ReviewSec key={review.id} review={review}></ReviewSec>)
+                    }
+
+                </div>
         
         </div>
     );

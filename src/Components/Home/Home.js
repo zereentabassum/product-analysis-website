@@ -1,10 +1,19 @@
 
 import React from 'react';
-import reviewDetails from '../Hook/reviewDetails';
+import { Link, useNavigate } from 'react-router-dom';
+import useReviews from '../Hook/useReviews';
 import './Home.css';
+import ReviewSec from './ReviewSec';
 
 const Home = () => {
-    const customerReviews = reviewDetails();
+    const [allReviews, setAllReviews] = useReviews();
+    const reviews = allReviews.slice(0, 3);
+
+    const navigate = useNavigate();
+
+    const showMore = ()=>{
+        navigate('/reviews')
+    }
     
     return (
         <div>
@@ -19,8 +28,16 @@ const Home = () => {
         </div>
 
         <div className='reviewSection pt-8 mt-6 '>
-            <h1 className='text-emerald-600 text-5xl pb-8'>Customer Reviews {customerReviews.length}</h1>
-            <div>
+            <h1 className='text-emerald-600 text-5xl pb-8'>Customer Reviews</h1>
+            <div >
+                <div className='reviews'>
+                    {
+                        reviews.map(review=> <ReviewSec key={review.id} review={review}></ReviewSec>)
+                    }
+
+                </div>
+                <button onClick={showMore} className='show-more'>Show More</button>
+
                
              <p></p>
              <p></p>

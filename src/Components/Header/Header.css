@@ -1,12 +1,30 @@
 .navbar{
     font-size: 20px;
-    background-color: rgb(255, 189, 165);
+    background-color: rgb(253, 224, 185);
     padding: 16px;
+    max-width: 100%;
 }
 .navBar{
     text-decoration: none;
-    padding-right: 30px;
+    padding-right: 50px;
     padding-top: 4px;
     padding-bottom: 4px;
     color: black;
+}
+.navBar:hover {
+    color: rgb(26, 209, 139);
+}
+
+
+
+@media only screen and (max-width:678px){
+
+    .navbar{
+        font-size: 14px;
+        background-color: rgb(253, 224, 185);
+        padding: 8px 0px;
+        max-width: 100%;
+    }    
+
+
 }
